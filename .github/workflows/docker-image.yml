@@ -50,5 +50,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: coverage.xml
         format: cobertura
+        debug: true
             
 
