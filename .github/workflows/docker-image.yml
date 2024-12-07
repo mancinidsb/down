@@ -42,6 +42,7 @@ jobs:
         docker exec down-backend-1 sh -c "git config --global --add safe.directory /backend; coverage run --source=backend/app/api --branch backend/app/manage.py test app; coverage xml"
         #docker exec testeworkflow-backend-1 sh -c "coverage run --source=backend/app/api --branch backend/app/manage.py test app"
         ls -a
+        cat coverage.xml
         
     #- name: Coveralls GitHub Action
       #uses: coverallsapp/github-action@v2.3.4
